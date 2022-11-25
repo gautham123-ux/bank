@@ -1,0 +1,39 @@
+
+<div class="page"  >
+    <div class="row ">
+
+    
+        <div class="col-6">
+            <form  (ngSubmit)="login()" [formGroup]="loginForm" style="margin-top: 150px;" class="p-3 border">
+        
+        <div style="margin-top: 150px;" class="p-4 border"> <div class="mb-3">
+        
+        <label class="acno"  for="acno">Account Number</label>
+        
+        <input id="acno"  formControlName="acno" name="acno" type="text" placeholder="Account Number" class="form-control">
+        
+        </div>
+        
+        <div class="mb-3">
+        
+        <label for="pswd">Password</label>
+        
+        <input id="pswd" formControlName="pswd" name="pswd" type="password" placeholder="Password" class="form-control">
+        
+        </div>
+        
+        <div>
+        
+        <button type="submit" class="btn btn-primary">Login</button> &nbsp; <span>New User? Click here to <a href="">Register</a> </span>
+        
+        </div>
+        
+        </div>
+    </form>
+        </div>
+        
+        </div>
+
+
+
+    </div>
