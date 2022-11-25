@@ -13,6 +13,9 @@
         <input id="acno"  formControlName="acno" name="acno" type="text" placeholder="Account Number" class="form-control">
         
         </div>
+        <div *ngIf="this.loginForm.get('acno')?.errors&&this.loginForm.get('acno')?.touched" class="text-danger">
+Invalid Account Number
+        </div>
         
         <div class="mb-3">
         
@@ -21,6 +24,10 @@
         <input id="pswd" formControlName="pswd" name="pswd" type="password" placeholder="Password" class="form-control">
         
         </div>
+
+        <div *ngIf="this.loginForm.get('pswd')?.errors&&this.loginForm.get('pswd')?.touched" class="text-danger">
+            Invalid Password
+                    </div>
         
         <div>
         
